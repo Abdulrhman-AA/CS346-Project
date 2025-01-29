@@ -1,0 +1,191 @@
+<%- include('base/header') -%>
+
+<header class="header" id="home">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><span class="text-info font-weight-bold" style="color: #cf67ed;">Lavendar</span> Restaurant</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#chefs">Chefs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Menus">Menus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#reserve">CALL NOW!  +966 55 123 4567 <span class="reserve"> Reserve a table</span></a>
+          </li>
+          <% if (user) { %>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/users/profile">Profile <img src="<%= '/img/' + user.avatar %>" class="rounded-circle" style="width: 32px;height: 30px;" alt="...">
+            </a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron" style="background-color: #0d122fa3;height: 100%;">
+    <div class="m-5" style="position: relative;top: 8vw;">
+      <p class="display-2 lead text-white text-center" style="border-bottom:1px solid #cf67ed;">The <span class="text-info font-weight-bold" style="color: #cf67ed;">Lavendar</span> Restaurant</p>
+      <p class="lead text-white text-center">READY TO BE OPENED</p>
+    </div>
+  </div>
+ 
+  </header>
+
+  <section id="about" class="m-5">
+    <div class="container">
+      <div class="row bg-white">
+        <div class="col-lg-6 mx-auto mt-3">
+            <h4 class="m-3">Experience the Essence of Arabia</h4>
+            <p class="parag text-left m-3">Indulge in the rich flavors and warm hospitality of Arabia. Our restaurant offers a unique culinary journey, blending traditional recipes with modern elegance. From savory dishes to sweet delights, every bite tells a story of heritage and passion.
+              At our restaurant, we take pride in crafting authentic Arabic cuisine using the finest ingredients. Whether you're savoring our signature dishes or exploring new flavors, every meal is prepared with care and served with a smile. Join us for an unforgettable dining experience that celebrates the heart of Arabian culture.</p>
+            </div>
+        <div class="col-lg-6 mx-auto">
+            <img src="img/about.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chefs" class="m-5">
+    <div class="container">
+      <div class="row bg-white">
+        <div class="col-lg-12 mx-auto mb-2">
+                <h4 class="text-center mt-4">Meet our chefs</h4>
+                <p class="card-text text-center"><small class="text-muted">THEY ARE NICE & FRIENDLY</small></p>
+                <div class="card-group">
+                        <div class="card m-2 hovereffect">
+                          <img style="height: 100%;" src="sys/chef-1.jpg" class="card-img-top" alt="...">
+                          <div class="overlay">
+                                <h2>Ibrahim</h2>
+                                <a class="info" href="#">link here</a>
+                          </div>
+                        </div>
+                        <div class="card m-2 hovereffect">
+                          <img style="height: 100%;" src="sys/chef-2.jpg" class="card-img-top" alt="...">
+                          <div class="overlay">
+                                <h2>Ramy</h2>
+                                <a class="info" href="#">link here</a>
+                          </div>
+                        </div>
+                        <div class="card m-2 hovereffect">
+                          <img src="sys/chef-3.jpg" class="card-img-top" alt="...">
+                          <div class="overlay">
+                                <h2>Rana</h2>
+                                <a class="info" href="#">link here</a>
+                          </div>
+                        </div>
+                        <div class="card m-2 hovereffect">
+                          <img src="sys/chef-4.jpg" class="card-img-top" alt="...">
+                          <div class="overlay">
+                                <h2>Abdulaziz</h2>
+                                <a class="info" href="#">link here</a>
+                          </div>
+                        </div>
+                        <div class="card m-2 hovereffect">
+                          <img src="sys/chef-5.jpg" class="card-img-top" alt="...">
+                          <div class="overlay">
+                                <h2>Khaled</h2>
+                                <a class="info" href="#">link here</a>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Menus" class="m-5">
+    <div class="container">
+      <div class="row bg-white">
+        <div class="col-lg-12 mx-auto">
+            <h4 class="text-center mt-4">Our Menus</h4>
+            <p class="card-text text-center"><small class="text-muted">TEA TIME & DINING</small></p>
+            <div class="col-lg-12 mx-auto mt-3">
+              <div class="d-flex flex-row bd-highlight justify-content-center">
+                  <div class="bd-highlight hovereffect"><img src="sys/menu-1.jpg" class="h-100 w-100" alt="...">
+                    <div class="overlay">
+                            <h2>Loubia & El har</h2>
+                      </div>
+                </div>
+                  <div class="bd-highlight hovereffect"><img src="sys/menu-2.jpg" class="h-100 w-100" alt="...">
+                    <div class="overlay">
+                            <h2>Saudi Kabsa</h2>
+                      </div>
+                  </div>
+                  <div class="bd-highlight hovereffect"><img src="sys/menu-3.jpg" class="h-100 w-100" alt="...">
+                    <div class="overlay">
+                            <h2>Chicken kebab</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="d-flex flex-row bd-highlight justify-content-center">
+                  <div class="bd-highlight hovereffect"><img src="sys/menu-4.jpg" class="h-100 w-100" alt="...">
+                      <div class="overlay">
+                              <h2>Varied breakfast</h2>
+                        </div>
+                  </div>
+                  <div class="bd-highlight hovereffect"><img src="sys/menu-5.jpg" class="h-100 w-100" alt="...">
+                    <div class="overlay">
+                            <h2>lunch</h2>
+                      </div>
+                  </div>
+                  <div class="bd-highlight hovereffect"><img src="sys/chef-6.jpg" class="h-100 w-100" alt="...">
+                    <div class="overlay">
+                            <h2>Ibrahim</h2>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="reserve" class="bg-white">
+    <hr>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm">
+                <h4 class="mb-3">Find Us</h4>
+                <p class="parag text-left">123 Arabian Nights Street</p>
+                <p class="parag text-left">Al Riyadh, Saudi Arabia</p>
+                <p class="parag text-left">Near the Golden Souk</p>
+            </div>
+            <div class="col-sm">
+                <h4 class="mb-3">Open Hours</h4>
+                <p class="parag text-left">Open Everyday</p>
+                <p class="parag text-left">Sunday to Thursday | 9:00 AM - 11:00 PM</p>
+                <p class="parag text-left">Friday - Saturday | 9:00 AM - 1:00 AM</p>
+            </div>
+            <div class="col-sm">
+                <h4 class="mb-3">Reservation</h4>
+                <p class="parag text-left">+966 55 123 4567 | +966 56 765 4321</p>
+                <p class="parag text-left">info@lavendarrestaurant.com</p>
+                <p class="parag text-left">WhatsApp: +966 55 123 4567</p>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+          <div class="col-sm">
+            <p class="m-5 parag text-center">Copyright &copy; Lavendar Restaurant 2025</p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+<%- include('base/footer') -%>
